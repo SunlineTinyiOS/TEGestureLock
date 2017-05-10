@@ -1,0 +1,22 @@
+{
+  "name": "TEGestureLock",
+  "version": "0.1.0",
+  "summary": "A short description of TEGestureLock.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sunjf@sunline.cn/TEGestureLock",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sunjf@sunline.cn": "457813584@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/sunjf@sunline.cn/TEGestureLock.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TEGestureLock/Classes/**/*"
+}

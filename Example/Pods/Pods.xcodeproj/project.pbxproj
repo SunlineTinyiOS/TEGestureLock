@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20D63B6DC24738296D5C4106DF0C80B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
+		2136F8C29AF22E757434B0BBE8F9EE2F /* Pods-TEGestureLock_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD33F1494D14644FBC5212A666809DA9 /* Pods-TEGestureLock_Tests-dummy.m */; };
+		397AF6B01E4857FE00DACD22 /* TEGestureLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 397AF6AD1E4857D100DACD22 /* TEGestureLock.m */; };
+		397AF6B31E4858D300DACD22 /* TEGestureLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 397AF6AC1E4857D100DACD22 /* TEGestureLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58CB853BB184087F3B76E010910F599E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
+		5EF4B359E1DF594133CBF0AC22840D70 /* Pods-TEGestureLock_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B65E6F765062BE70FFBEF7E87777CB22 /* Pods-TEGestureLock_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		659D15DC874987ADA248D4E5A65B8937 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 166061AF94426C26F281D6DA25F57ECE /* ReplaceMe.m */; };
+		666A24945E110CF1ED563AFBB786F76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */; };
+		6C87B3B26C0ECDFDAAB56E62F94210FB /* Pods-TEGestureLock_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D24FAD0A3F99B9DD95AECEA288D13A /* Pods-TEGestureLock_Example-dummy.m */; };
+		7DD4159592C51D20D3A9C1A836209713 /* TEGestureLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 246684399E09360239320BD57042F9CF /* TEGestureLock-dummy.m */; };
+		8CF580F009AD14B7AB10E7A289666F86 /* TEGestureLock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0FA590D8D0269775514A0C90E6F5C1 /* TEGestureLock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		943AAEB235D9B14DEBBE9E8BB1640F79 /* Pods-TEGestureLock_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEF0782497DC920EE7E7A371D8BFB599 /* Pods-TEGestureLock_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE5E1B81EC301D1008F4726 /* NSBundle+TEGestrueLock.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE5E1B41EC301D1008F4726 /* NSBundle+TEGestrueLock.h */; };
+		AEE5E1B91EC301D1008F4726 /* NSBundle+TEGestrueLock.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE5E1B51EC301D1008F4726 /* NSBundle+TEGestrueLock.m */; };
+		AEE5E1BA1EC301D1008F4726 /* UIImage+TEGestrueLock.h in Headers */ = {isa = PBXBuildFile; fileRef = AEE5E1B61EC301D1008F4726 /* UIImage+TEGestrueLock.h */; };
+		AEE5E1BB1EC301D1008F4726 /* UIImage+TEGestrueLock.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE5E1B71EC301D1008F4726 /* UIImage+TEGestrueLock.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC5E60AFA47C72F2839F0D48B6326AA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E81F35178FB54AFC69EE4CF9F56AFAA;
+			remoteInfo = TEGestureLock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BA7BC51BBDB047CBF590DB591A6429A /* Pods_TEGestureLock_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TEGestureLock_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E496C2E8F5310CCD9757EFC3961482B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		13B6F6DF17572BC3D558146D707B8B31 /* Pods-TEGestureLock_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TEGestureLock_Tests.modulemap"; sourceTree = "<group>"; };
+		166061AF94426C26F281D6DA25F57ECE /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		1F7D073DD02A637BB26A9071A0E6C4B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246684399E09360239320BD57042F9CF /* TEGestureLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TEGestureLock-dummy.m"; sourceTree = "<group>"; };
+		2783014BCC09C8871B18398D11F98AC1 /* TEGestureLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TEGestureLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2786D15FF7C2780FF7BA5E8FE0035C62 /* Pods-TEGestureLock_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TEGestureLock_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		324759429A06C51E95742CEE10C4E0DB /* Pods-TEGestureLock_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TEGestureLock_Example-frameworks.sh"; sourceTree = "<group>"; };
+		397AF6AC1E4857D100DACD22 /* TEGestureLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEGestureLock.h; sourceTree = "<group>"; };
+		397AF6AD1E4857D100DACD22 /* TEGestureLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEGestureLock.m; sourceTree = "<group>"; };
+		3C32099E0A716483F90035D502A494AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		411FFB68750C599D1612D14F0A4E9643 /* Pods-TEGestureLock_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TEGestureLock_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		41342C8431DAAFD900CDBA3C3B840CBB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		54CE79CE9F387285A9ED9D45A2384270 /* Pods-TEGestureLock_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TEGestureLock_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6557DCFE3CAE0726E6034C9A833C32CF /* TEGestureLock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TEGestureLock.modulemap; sourceTree = "<group>"; };
+		6CCE46DA77DA0CB89D280A23FC6604B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73701C6F09B527FAE66888D843896E60 /* TEGestureLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TEGestureLock-prefix.pch"; sourceTree = "<group>"; };
+		74D24FAD0A3F99B9DD95AECEA288D13A /* Pods-TEGestureLock_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TEGestureLock_Example-dummy.m"; sourceTree = "<group>"; };
+		80C680DB6939EEFCBC30F86D0FABBC92 /* Pods-TEGestureLock_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TEGestureLock_Tests-resources.sh"; sourceTree = "<group>"; };
+		894E1CD26B0B9C641224F6F9D569875A /* Pods_TEGestureLock_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TEGestureLock_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0C5F24538B0ABAA4ABD511833E166C /* Pods-TEGestureLock_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TEGestureLock_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AEE5E1B41EC301D1008F4726 /* NSBundle+TEGestrueLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TEGestrueLock.h"; sourceTree = "<group>"; };
+		AEE5E1B51EC301D1008F4726 /* NSBundle+TEGestrueLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TEGestrueLock.m"; sourceTree = "<group>"; };
+		AEE5E1B61EC301D1008F4726 /* UIImage+TEGestrueLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TEGestrueLock.h"; sourceTree = "<group>"; };
+		AEE5E1B71EC301D1008F4726 /* UIImage+TEGestrueLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TEGestrueLock.m"; sourceTree = "<group>"; };
+		AFC0D33BC98599D18146B79B1082EDF1 /* Pods-TEGestureLock_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TEGestureLock_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B65E6F765062BE70FFBEF7E87777CB22 /* Pods-TEGestureLock_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TEGestureLock_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D6B1C8A6A39F677D79464F790253BE7A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DE6E15B24735EC6F533BE44CFEEA4ABF /* Pods-TEGestureLock_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TEGestureLock_Example.modulemap"; sourceTree = "<group>"; };
+		DEF0782497DC920EE7E7A371D8BFB599 /* Pods-TEGestureLock_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TEGestureLock_Example-umbrella.h"; sourceTree = "<group>"; };
+		E044A250D0252EDCA1629B1A7C6CEAF9 /* Pods-TEGestureLock_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TEGestureLock_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EB0FA590D8D0269775514A0C90E6F5C1 /* TEGestureLock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TEGestureLock-umbrella.h"; sourceTree = "<group>"; };
+		F56BE4AAD236F5EC8AEAE68545DFFA8F /* TEGestureLock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TEGestureLock.xcconfig; sourceTree = "<group>"; };
+		F5CA426532BBAFCAF35D294E0EC4F679 /* Pods-TEGestureLock_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TEGestureLock_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F922468A6CC5D74BA71BC5EDEBA1B8A1 /* Pods-TEGestureLock_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TEGestureLock_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F93DBE5D0340A117DACEB307926B5855 /* Pods-TEGestureLock_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TEGestureLock_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FD33F1494D14644FBC5212A666809DA9 /* Pods-TEGestureLock_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TEGestureLock_Tests-dummy.m"; sourceTree = "<group>"; };
+		FF1E9793458F5FDCCA995BC7465ACA15 /* Pods-TEGestureLock_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TEGestureLock_Example-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B5CFA74615F91E0AC10243084549F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CB853BB184087F3B76E010910F599E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2734CA06778766698BA49FC3B6FAF1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D63B6DC24738296D5C4106DF0C80B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5AEE08880B62577A1A7A96C66693460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666A24945E110CF1ED563AFBB786F76C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074E397D7F5CA1306304A53C8F0A0AEB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9617EAB6A9086D4BF97296205FD2D2BC /* Pods-TEGestureLock_Example */,
+				E0973C531C2EE933204F602C20E7FF50 /* Pods-TEGestureLock_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F76C5E10C253876355FB231229C42226 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35D9BCC0003549E74FCE1436F0F4CED9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AEE5E1B41EC301D1008F4726 /* NSBundle+TEGestrueLock.h */,
+				AEE5E1B51EC301D1008F4726 /* NSBundle+TEGestrueLock.m */,
+				AEE5E1B61EC301D1008F4726 /* UIImage+TEGestrueLock.h */,
+				AEE5E1B71EC301D1008F4726 /* UIImage+TEGestrueLock.m */,
+				397AF6AC1E4857D100DACD22 /* TEGestureLock.h */,
+				397AF6AD1E4857D100DACD22 /* TEGestureLock.m */,
+				166061AF94426C26F281D6DA25F57ECE /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		470E4630215154F29C96BCCBF20764D5 /* TEGestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				35D9BCC0003549E74FCE1436F0F4CED9 /* Classes */,
+			);
+			path = TEGestureLock;
+			sourceTree = "<group>";
+		};
+		697B799B4897178D5E1CC4FFEA2EFF0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				894E1CD26B0B9C641224F6F9D569875A /* Pods_TEGestureLock_Example.framework */,
+				0BA7BC51BBDB047CBF590DB591A6429A /* Pods_TEGestureLock_Tests.framework */,
+				2783014BCC09C8871B18398D11F98AC1 /* TEGestureLock.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				EBF5D35595E21DADC59407C22759A65A /* Development Pods */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
+				697B799B4897178D5E1CC4FFEA2EFF0A /* Products */,
+				074E397D7F5CA1306304A53C8F0A0AEB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9617EAB6A9086D4BF97296205FD2D2BC /* Pods-TEGestureLock_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D073DD02A637BB26A9071A0E6C4B8 /* Info.plist */,
+				DE6E15B24735EC6F533BE44CFEEA4ABF /* Pods-TEGestureLock_Example.modulemap */,
+				8D0C5F24538B0ABAA4ABD511833E166C /* Pods-TEGestureLock_Example-acknowledgements.markdown */,
+				AFC0D33BC98599D18146B79B1082EDF1 /* Pods-TEGestureLock_Example-acknowledgements.plist */,
+				74D24FAD0A3F99B9DD95AECEA288D13A /* Pods-TEGestureLock_Example-dummy.m */,
+				324759429A06C51E95742CEE10C4E0DB /* Pods-TEGestureLock_Example-frameworks.sh */,
+				FF1E9793458F5FDCCA995BC7465ACA15 /* Pods-TEGestureLock_Example-resources.sh */,
+				DEF0782497DC920EE7E7A371D8BFB599 /* Pods-TEGestureLock_Example-umbrella.h */,
+				F93DBE5D0340A117DACEB307926B5855 /* Pods-TEGestureLock_Example.debug.xcconfig */,
+				F922468A6CC5D74BA71BC5EDEBA1B8A1 /* Pods-TEGestureLock_Example.release.xcconfig */,
+			);
+			name = "Pods-TEGestureLock_Example";
+			path = "Target Support Files/Pods-TEGestureLock_Example";
+			sourceTree = "<group>";
+		};
+		CF836E4EEA0A1BC487BA87C417B1C5AC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1C8A6A39F677D79464F790253BE7A /* Info.plist */,
+				6557DCFE3CAE0726E6034C9A833C32CF /* TEGestureLock.modulemap */,
+				F56BE4AAD236F5EC8AEAE68545DFFA8F /* TEGestureLock.xcconfig */,
+				246684399E09360239320BD57042F9CF /* TEGestureLock-dummy.m */,
+				73701C6F09B527FAE66888D843896E60 /* TEGestureLock-prefix.pch */,
+				EB0FA590D8D0269775514A0C90E6F5C1 /* TEGestureLock-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TEGestureLock";
+			sourceTree = "<group>";
+		};
+		E006CD43E30B75813A147AFD59EFA8A3 /* TEGestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				CF836E4EEA0A1BC487BA87C417B1C5AC /* Support Files */,
+				470E4630215154F29C96BCCBF20764D5 /* TEGestureLock */,
+			);
+			name = TEGestureLock;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E0973C531C2EE933204F602C20E7FF50 /* Pods-TEGestureLock_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6CCE46DA77DA0CB89D280A23FC6604B1 /* Info.plist */,
+				13B6F6DF17572BC3D558146D707B8B31 /* Pods-TEGestureLock_Tests.modulemap */,
+				54CE79CE9F387285A9ED9D45A2384270 /* Pods-TEGestureLock_Tests-acknowledgements.markdown */,
+				E044A250D0252EDCA1629B1A7C6CEAF9 /* Pods-TEGestureLock_Tests-acknowledgements.plist */,
+				FD33F1494D14644FBC5212A666809DA9 /* Pods-TEGestureLock_Tests-dummy.m */,
+				411FFB68750C599D1612D14F0A4E9643 /* Pods-TEGestureLock_Tests-frameworks.sh */,
+				80C680DB6939EEFCBC30F86D0FABBC92 /* Pods-TEGestureLock_Tests-resources.sh */,
+				B65E6F765062BE70FFBEF7E87777CB22 /* Pods-TEGestureLock_Tests-umbrella.h */,
+				F5CA426532BBAFCAF35D294E0EC4F679 /* Pods-TEGestureLock_Tests.debug.xcconfig */,
+				2786D15FF7C2780FF7BA5E8FE0035C62 /* Pods-TEGestureLock_Tests.release.xcconfig */,
+			);
+			name = "Pods-TEGestureLock_Tests";
+			path = "Target Support Files/Pods-TEGestureLock_Tests";
+			sourceTree = "<group>";
+		};
+		EBF5D35595E21DADC59407C22759A65A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E006CD43E30B75813A147AFD59EFA8A3 /* TEGestureLock */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F76C5E10C253876355FB231229C42226 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DA75099E263FEEEAC4EABC8DDDC7FEE0 /* Foundation.framework */,
+				41342C8431DAAFD900CDBA3C3B840CBB /* QuartzCore.framework */,
+				0E496C2E8F5310CCD9757EFC3961482B /* UIKit.framework */,
+				3C32099E0A716483F90035D502A494AC /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6E38AC3A7D0FE560B32B20FE021376E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF4B359E1DF594133CBF0AC22840D70 /* Pods-TEGestureLock_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		828ACB09CE85785796962DFE91A50C0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF580F009AD14B7AB10E7A289666F86 /* TEGestureLock-umbrella.h in Headers */,
+				AEE5E1B81EC301D1008F4726 /* NSBundle+TEGestrueLock.h in Headers */,
+				AEE5E1BA1EC301D1008F4726 /* UIImage+TEGestrueLock.h in Headers */,
+				397AF6B31E4858D300DACD22 /* TEGestureLock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49C49909EA54217849439E729D0173A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943AAEB235D9B14DEBBE9E8BB1640F79 /* Pods-TEGestureLock_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E81F35178FB54AFC69EE4CF9F56AFAA /* TEGestureLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E745B435DA040CCD70B4A51DB61061C4 /* Build configuration list for PBXNativeTarget "TEGestureLock" */;
+			buildPhases = (
+				01D89A96443057A4FF30431F104EC741 /* Sources */,
+				1B5CFA74615F91E0AC10243084549F06 /* Frameworks */,
+				828ACB09CE85785796962DFE91A50C0E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEGestureLock;
+			productName = TEGestureLock;
+			productReference = 2783014BCC09C8871B18398D11F98AC1 /* TEGestureLock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79A545C11205A388C15F9D26857C1076 /* Pods-TEGestureLock_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44142B282711FCB8AB26C27A045923BA /* Build configuration list for PBXNativeTarget "Pods-TEGestureLock_Example" */;
+			buildPhases = (
+				845F37B23D677EA1DB2727E6709A5CBC /* Sources */,
+				D5AEE08880B62577A1A7A96C66693460 /* Frameworks */,
+				B49C49909EA54217849439E729D0173A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				199994D42DEBB6551CBFED72AB7C76CC /* PBXTargetDependency */,
+			);
+			name = "Pods-TEGestureLock_Example";
+			productName = "Pods-TEGestureLock_Example";
+			productReference = 894E1CD26B0B9C641224F6F9D569875A /* Pods_TEGestureLock_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C60D449EAC5CF00CFFA17353B8F028B9 /* Pods-TEGestureLock_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FE20940FC3171A9A97D9E4FF0986BB /* Build configuration list for PBXNativeTarget "Pods-TEGestureLock_Tests" */;
+			buildPhases = (
+				50BB6D497B502D34304847B3BB5EEEF6 /* Sources */,
+				B2734CA06778766698BA49FC3B6FAF1D /* Frameworks */,
+				6E38AC3A7D0FE560B32B20FE021376E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TEGestureLock_Tests";
+			productName = "Pods-TEGestureLock_Tests";
+			productReference = 0BA7BC51BBDB047CBF590DB591A6429A /* Pods_TEGestureLock_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 697B799B4897178D5E1CC4FFEA2EFF0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79A545C11205A388C15F9D26857C1076 /* Pods-TEGestureLock_Example */,
+				C60D449EAC5CF00CFFA17353B8F028B9 /* Pods-TEGestureLock_Tests */,
+				6E81F35178FB54AFC69EE4CF9F56AFAA /* TEGestureLock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D89A96443057A4FF30431F104EC741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659D15DC874987ADA248D4E5A65B8937 /* ReplaceMe.m in Sources */,
+				7DD4159592C51D20D3A9C1A836209713 /* TEGestureLock-dummy.m in Sources */,
+				AEE5E1BB1EC301D1008F4726 /* UIImage+TEGestrueLock.m in Sources */,
+				AEE5E1B91EC301D1008F4726 /* NSBundle+TEGestrueLock.m in Sources */,
+				397AF6B01E4857FE00DACD22 /* TEGestureLock.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50BB6D497B502D34304847B3BB5EEEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2136F8C29AF22E757434B0BBE8F9EE2F /* Pods-TEGestureLock_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845F37B23D677EA1DB2727E6709A5CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C87B3B26C0ECDFDAAB56E62F94210FB /* Pods-TEGestureLock_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		199994D42DEBB6551CBFED72AB7C76CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TEGestureLock;
+			target = 6E81F35178FB54AFC69EE4CF9F56AFAA /* TEGestureLock */;
+			targetProxy = FC5E60AFA47C72F2839F0D48B6326AA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		40B28F05E58E69704C4C1D5F8E874DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93DBE5D0340A117DACEB307926B5855 /* Pods-TEGestureLock_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TEGestureLock_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TEGestureLock_Example/Pods-TEGestureLock_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TEGestureLock_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6400F50DB728B17D1E072F6EB54E1514 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56BE4AAD236F5EC8AEAE68545DFFA8F /* TEGestureLock.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TEGestureLock/TEGestureLock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TEGestureLock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TEGestureLock/TEGestureLock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TEGestureLock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		85B5B1EF8DBBC649CA8E8F32BFA5206D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2786D15FF7C2780FF7BA5E8FE0035C62 /* Pods-TEGestureLock_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TEGestureLock_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TEGestureLock_Tests/Pods-TEGestureLock_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TEGestureLock_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A07514756CAA0059A879B4E9E7AD8A40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5CA426532BBAFCAF35D294E0EC4F679 /* Pods-TEGestureLock_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TEGestureLock_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TEGestureLock_Tests/Pods-TEGestureLock_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TEGestureLock_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2FF061CF4D128C4799157838D4E297F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F922468A6CC5D74BA71BC5EDEBA1B8A1 /* Pods-TEGestureLock_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TEGestureLock_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TEGestureLock_Example/Pods-TEGestureLock_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TEGestureLock_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6E6AAF9DD76097E5BC2F03716FB7A0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F56BE4AAD236F5EC8AEAE68545DFFA8F /* TEGestureLock.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TEGestureLock/TEGestureLock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TEGestureLock/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TEGestureLock/TEGestureLock.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TEGestureLock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44142B282711FCB8AB26C27A045923BA /* Build configuration list for PBXNativeTarget "Pods-TEGestureLock_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40B28F05E58E69704C4C1D5F8E874DED /* Debug */,
+				C2FF061CF4D128C4799157838D4E297F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FE20940FC3171A9A97D9E4FF0986BB /* Build configuration list for PBXNativeTarget "Pods-TEGestureLock_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07514756CAA0059A879B4E9E7AD8A40 /* Debug */,
+				85B5B1EF8DBBC649CA8E8F32BFA5206D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E745B435DA040CCD70B4A51DB61061C4 /* Build configuration list for PBXNativeTarget "TEGestureLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6E6AAF9DD76097E5BC2F03716FB7A0C /* Debug */,
+				6400F50DB728B17D1E072F6EB54E1514 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TEGestureLock_Example' do
+  pod 'TEGestureLock', :path => '../'
+
+  target 'TEGestureLock_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
