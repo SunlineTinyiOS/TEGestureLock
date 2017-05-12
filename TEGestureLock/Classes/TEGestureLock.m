@@ -52,7 +52,7 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
     self = [super init];
     if (self) {
         
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor clearColor];
         
         self.contentInsets = UIEdgeInsetsZero;
         
