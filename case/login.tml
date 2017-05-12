@@ -1,0 +1,13 @@
+<tml id="login">
+	<head>
+		<style href="css/public.css"/>
+		<script src="commonJs/tools.js"/>
+        <script src="staticJs/login.js"/>
+	</head>
+	<body>
+        <label class="loginLabel" value="hello TinyBuilder!"/>
+        <button value="点击" onclick="funcPress()"/>
+        <embed classid="TEGestureLock" class="loading bg2 center vcenter" id="GestureLock">
+        </embed>
+</body>
+</tml>

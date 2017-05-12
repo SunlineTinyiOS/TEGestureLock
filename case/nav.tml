@@ -1,0 +1,8 @@
+<frame>
+    <head>
+        <script src="commonJs/tools.js"/>
+    </head>
+    <navigator id="nav1">
+        <page url="login.tml"  hidesStatusBar="true"/>
+    </navigator>
+</frame>

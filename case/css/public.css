@@ -1,0 +1,270 @@
+body {
+    background-color:#f3f3f3;
+}
+
+vbox{
+    width:100%;
+    height:100%;
+}
+/*方便tml人员编写的时候调试用的背景色*/
+.bg{
+	background-color:#abcdef;
+}
+/*白色背景色*/
+.bg_white{
+	background-color:#ffffff;
+}
+.bg2{
+    background-color:#fff555;
+}
+
+/*分割线*/
+.border_line{
+	border-color:#d5d5d5;
+	border-width:0 0 1 0;
+}
+/*顶部title*/
+.header{
+    height:48;
+    width:100%;
+    background-color:#FF6A5C;
+}
+/*顶部title(不带分割线)*/
+.header_no_line{
+	height:48;
+    width:100%;
+    background-color:#2599EA;
+}
+/*顶部title文字样式*/
+.title {
+    align:center;
+    text-align:center;
+    vertical-align:middle;
+    font-size:17;
+    color:#ffffff;
+}
+/*顶部返回按钮样式(本地需要有back.png)*/
+.back{
+    background-image:url(file:///img/public/back.png);
+    height:48;
+    width:40;
+    background-repeat:no-repeat;
+    background-position:center middle;
+    position:absolute;
+}
+.back_img{
+	height:20;
+	width:13;
+	align:center;
+	vertical-align:middle;
+}
+
+
+
+/*页边距*/
+.edge_distance{
+	padding:0 12;
+}
+/*通用行间距*/
+.margin36{
+	margin:13 0 0 0;
+}
+/*字号*/
+.fs_87{
+	font-size:42;
+}
+.fs_20{
+	font-size:20;
+}
+.fs_50{
+	font-size:17;
+}
+.fs_48{
+	font-size:16;
+}
+.fs_29{
+	font-size:15;
+}
+.fs_content{
+	font-size:14;
+}
+.fs_40{
+	font-size:13;
+}
+.fs_36{
+	font-size:12;
+}
+.fs_11{
+	font-size:11;
+}
+/*100%宽度*/
+.w100{
+	width:100%;
+}
+/*100%高度*/
+.h100{
+	height:100%;
+}
+/*50%宽度*/
+.w50{
+	width:50%;
+}
+/*70%宽度*/
+.w70{
+    width:70%;
+}
+/*50%高度*/
+.h50{
+	height:50%;
+}
+.text_center{
+	text-align:center;
+}
+.vcenter{
+    vertical-align:middle;
+}
+.vbottom{
+	vertical-align:bottom;
+}
+
+.center {
+    align:center;
+}
+.right {
+    align:right;
+}
+.left {
+    align:left;
+}
+.relative{
+	position:relative;
+}
+.relative_right{
+	right:0;
+}
+
+/*font color*/
+.fc_h_gray{
+	color:#666666;
+}
+.fc_gray{
+	color:#999999;
+}
+.fc_yellow{
+	color:#FEC300;
+}
+.fc_orange{
+	color:#ff7856;
+}
+.fc_white{
+	color:#ffffff;
+}
+.fc_deepBlue{
+	color:#124170;
+}
+/*comment block height*/
+.block_height{
+	height:43;
+}
+
+/*底部栏样式*/
+.bottom_height{
+	width:100%;
+	height:44;
+	border-color:#d5d5d5;
+	border-width:1 0 0 0;
+}
+
+/*main theme color*/
+.theme_color{
+	background-color:#FF6A5C;
+}
+/*橘色*/
+.orange{
+	background-color:#ff7856;
+}
+.orange:focus{
+	background-color:#f15e39;
+}
+/*淡蓝色*/
+.bg_lightBlue{
+    background-color:#EDF8FF;
+}
+.gray_btn_bg{
+	background-color:#bfbfbf;
+}
+/*通用btn蓝色*/
+.btn_blue{
+	height:50;
+	width:260;
+	background-color:#2599EA;
+	color:#ffffff;
+	border-radius:8;
+	align:center;
+	text-align:center;
+	font-size:17;
+}
+.btn_blue:focus{
+	background-color:#1279b9;
+}
+.btn_gray{
+	height:50;
+	width:260;
+	background-color:#bfbfbf;
+	color:#ffffff;
+	border-radius:8;
+	align:center;
+	text-align:center;
+	font-size:17;
+}
+.btn_white{
+	background-color:#ffffff;
+}
+
+.btn_orange_order{
+    color:#ff7856;
+}
+
+.btn_orange_order:focus{
+    color:#ffffff;
+}
+
+.btn_white:focus{
+	background-color:#eaeaea;
+}
+.visible{
+	visibility:visible;
+}
+.hidden{
+	visibility:hidden;
+}
+
+/*loading外框样式*/
+.loadingBig{
+    width:100%;
+    height:85%;
+    position:absolute;
+    top:40;
+    left:0;
+    visibility:hidden;
+}
+.loadingVis{
+    width:100%;
+    height:85%;
+    position:absolute;
+    top:40;
+    left:0;
+}
+/*loading内部样式*/
+.loadingAm{
+ 	background-am:url(file:///img/public/load.am) 150;
+ 	width:200;
+ 	height:141.7;
+ 	align:center;
+    vertical-align:middle;
+}
+.loginLabel{
+	height:200;
+	align:center;
+	margin:50;
+}
