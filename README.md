@@ -19,8 +19,13 @@ it, simply add the following line to your Podfile:
 pod "TEGestureLock"
 ```
 ## Usage
+1.首先，在Embed.plist文件中注册该插件。
+![](https://raw.githubusercontent.com/SunlineTinyiOS/TEGestureLock/master/READMESource/1.png)  
+2.Tml和js中使用如下:
+![](https://raw.githubusercontent.com/SunlineTinyiOS/TEGestureLock/master/READMESource/2.png) 
+![](https://raw.githubusercontent.com/SunlineTinyiOS/TEGestureLock/master/READMESource/3.png) 
 
-
+在case目录中有使用案例，可以参考。
 
 ## Author
 
