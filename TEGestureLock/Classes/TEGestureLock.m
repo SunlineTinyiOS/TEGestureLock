@@ -17,10 +17,10 @@ static const NSUInteger kButtonsPerRow      = 3;
 //static const CGSize kButtonDefaultSize      = { 60, 60 };
 static const CGFloat kLineDefaultWidth      = 10;
 
-//static NSString* const kButtonNormalImageName = @"TEGestureLock.bundle/gesture_lock_button_normal";
-//static NSString* const kButtonSelectImageName = @"TEGestureLock.bundle/gesture_lock_button_select";
-static NSString* const kButtonNormalImageName = @"gesture_lock_button_normal";
-static NSString* const kButtonSelectImageName = @"gesture_lock_button_select";
+static NSString* const kButtonNormalImageName = @"TEGestureLock.bundle/gesture_lock_button_normal";
+static NSString* const kButtonSelectImageName = @"TEGestureLock.bundle/gesture_lock_button_select";
+//static NSString* const kButtonNormalImageName = @"gesture_lock_button_normal";
+//static NSString* const kButtonSelectImageName = @"gesture_lock_button_select";
 static NSString* const kOnCompleteTag       = @"oncomplete";
 static NSString* const kErrCompleteTag       = @"errcomplete";
 
@@ -73,10 +73,10 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
         self.selectedButtons = [NSMutableArray array];
         
         
-//        self.normalButtonImage = [UIImage imageNamed:kButtonNormalImageName];
-//        self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
+        self.normalButtonImage = [UIImage imageNamed:kButtonNormalImageName];
+        self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
         
-        self.normalButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
+//        self.normalButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
 //        self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
         
         //隐藏手势密码的轨迹
@@ -85,13 +85,13 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
         if ([isGestureTraceStr isKindOfClass:[NSString class]])
         {
             if([isGestureTraceStr isEqualToString:@"0"]){
-//                self.selectedButtonImage = [UIImage imageNamed:kButtonNormalImageName];
-                 self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
+                self.selectedButtonImage = [UIImage imageNamed:kButtonNormalImageName];
+//                 self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
                 self.lineColor = [UIColor clearColor];
             }
             else{
-//                self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
-                self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
+                self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
+//                self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
                 self.lineColor = [UIColor colorWithRed:6.0/255 green:112.0/255 blue:154.0/255 alpha:0.6];
             }
         }
@@ -326,7 +326,7 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
 - (void)nitifyWithPasswords:(NSArray*)passwords
 {
     if (passwords.count != 0) {
-        NSString* value = [passwords componentsJoinedByString:@"|"];
+        NSString* value = [passwords componentsJoinedByString:@""];
         NSString *md5 = [self calcMD5:value];
         NSArray *array = @[@(passwords.count), md5];
         [self executiveEvent:@"touchesEnd" array:array];
@@ -419,7 +419,6 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
     else if([name isEqualToString:@"lineColor"]) {
         self.lineColor = [self colorWithHex:value andAlpha:1];
     }
-    //图片
     
 }
 - (UIColor*)colorWithHex:(NSString*)hex andAlpha:(float)alpha{

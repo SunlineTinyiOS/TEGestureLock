@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TEGestureLock'
-  s.version          = '1.0.5'
+  s.version          = '1.0.6'
   s.summary          = 'Tiny手势密码插件.'
 
 # This description is used to generate tags and improve search results.
@@ -30,10 +30,11 @@ Pod::Spec.new do |s|
 
   s.source_files = 'TEGestureLock/Classes/**/*'
   
-  s.resource_bundles = {
-     'TEGestureLock' => ['TEGestureLock/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #   'TEGestureLock' => ['TEGestureLock/Assets/*.png']
+  #}
 
+  s.resource = 'TEGestureLock/Assets/TEGestureLock.bundle'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
