@@ -14,8 +14,9 @@
 
 static const NSUInteger kNumberOfButtons    = 9;
 static const NSUInteger kButtonsPerRow      = 3;
-static const CGSize kButtonDefaultSize      = { 60, 60 };
+//static const CGSize kButtonDefaultSize      = { 60, 60 };
 static const CGFloat kLineDefaultWidth      = 10;
+
 //static NSString* const kButtonNormalImageName = @"TEGestureLock.bundle/gesture_lock_button_normal";
 //static NSString* const kButtonSelectImageName = @"TEGestureLock.bundle/gesture_lock_button_select";
 static NSString* const kButtonNormalImageName = @"gesture_lock_button_normal";
@@ -43,9 +44,14 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
 //stateLabel距离顶部button的距离
 @property (nonatomic, assign) int kLabelHeight;
 
+@property (nonatomic, assign) CGSize kButtonDefaultSize;
+
+
 @end
 
 @implementation TEGestureLock
+@synthesize kButtonDefaultSize;
+
 
 - (id)init
 {
@@ -66,11 +72,29 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
         
         self.selectedButtons = [NSMutableArray array];
         
+        
 //        self.normalButtonImage = [UIImage imageNamed:kButtonNormalImageName];
 //        self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
         
         self.normalButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
-        self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
+//        self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
+        
+        //隐藏手势密码的轨迹
+        NSString *isGestureTrace = [[NSUserDefaults standardUserDefaults] objectForKey:@"isGestureTrace"];
+        NSString *isGestureTraceStr = [NSString stringWithFormat:@"%@",isGestureTrace];
+        if ([isGestureTraceStr isKindOfClass:[NSString class]])
+        {
+            if([isGestureTraceStr isEqualToString:@"0"]){
+//                self.selectedButtonImage = [UIImage imageNamed:kButtonNormalImageName];
+                 self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
+                self.lineColor = [UIColor clearColor];
+            }
+            else{
+//                self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
+                self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
+                self.lineColor = [UIColor colorWithRed:6.0/255 green:112.0/255 blue:154.0/255 alpha:0.6];
+            }
+        }
         
         // 这两个属性必须在最后设置 !!!
         self.numberOfButtons = kNumberOfButtons;
@@ -129,16 +153,14 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
     return image;
 }
 
-
-
-
-
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     CGRect tempRect = UIEdgeInsetsInsetRect(self.bounds, self.contentInsets);
     self.contentView.frame = tempRect;
     
+    float btnWidth = tempRect.size.width / 4;
+    kButtonDefaultSize = CGSizeMake(btnWidth, btnWidth);
     
     CGFloat hButtonMargin = (self.contentView.bounds.size.width - kButtonDefaultSize.width * self.buttonsPerRow) / (self.buttonsPerRow - 1);
     NSUInteger numberOfRows = ceilf((self.numberOfButtons * 1.0 / self.buttonsPerRow));
@@ -389,4 +411,45 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
             result[12], result[13], result[14], result[15]
             ];
 }
+
+-(void)setParam:(NSString *)name :(id)value{
+    if([name isEqualToString:@"disable"]) {
+        self.userInteractionEnabled = NO;
+    }
+    else if([name isEqualToString:@"lineColor"]) {
+        self.lineColor = [self colorWithHex:value andAlpha:1];
+    }
+    //图片
+    
+}
+- (UIColor*)colorWithHex:(NSString*)hex andAlpha:(float)alpha{
+    hex = [hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if (!hex || [hex length] != 7) {
+        return [UIColor clearColor];
+    }
+    
+    unsigned red = 256, green = 256, blue = 256;
+    
+    NSRange redRange = {1,2};
+    NSScanner *scanner = [NSScanner scannerWithString:[hex substringWithRange:redRange]];
+    [scanner scanHexInt:&red];
+    
+    NSRange greenRange = {3,2};
+    scanner = [NSScanner scannerWithString:[hex substringWithRange:greenRange]];
+    [scanner scanHexInt:&green];
+    
+    NSRange blueRange = {5,2};
+    scanner = [NSScanner scannerWithString:[hex substringWithRange:blueRange]];
+    [scanner scanHexInt:&blue];
+    
+    if (red == 256 || green == 256 || blue == 256) {
+        return nil;
+    }
+    else {
+        return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:alpha];
+    }
+}
+
+
+
 @end

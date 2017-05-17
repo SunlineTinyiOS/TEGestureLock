@@ -27,6 +27,11 @@ pod "TEGestureLock"
 
 在case目录中有使用案例，可以参考。
 
+## updtae Notes
+1.0.5
+修复bug:手势密码滑动较快时，连接中间的点经常没有连接上  
+       支持隐藏手势密码的路径 
+
 ## Author
 
 sunjf@sunline.cn, 457813584@qq.com

@@ -19,6 +19,8 @@
 {
     TEGestureLock *lock = [[TEGestureLock alloc] init];
     lock.frame = CGRectMake(0, 0, 300, 300);
+    [lock performSelector:@selector(setParam: :) withObject:@"lineColor" withObject:@"#FFFF00"];
+
     [self.view addSubview:lock];
     
     [super viewDidLoad];
