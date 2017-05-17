@@ -159,7 +159,7 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
     CGRect tempRect = UIEdgeInsetsInsetRect(self.bounds, self.contentInsets);
     self.contentView.frame = tempRect;
     
-    float btnWidth = tempRect.size.width / 4;
+    float btnWidth = tempRect.size.width / 3;
     kButtonDefaultSize = CGSizeMake(btnWidth, btnWidth);
     
     CGFloat hButtonMargin = (self.contentView.bounds.size.width - kButtonDefaultSize.width * self.buttonsPerRow) / (self.buttonsPerRow - 1);
@@ -417,9 +417,19 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
         self.userInteractionEnabled = NO;
     }
     else if([name isEqualToString:@"lineColor"]) {
-        self.lineColor = [self colorWithHex:value andAlpha:1];
+        //隐藏手势密码的轨迹
+        NSString *isGestureTrace = [[NSUserDefaults standardUserDefaults] objectForKey:@"isGestureTrace"];
+        NSString *isGestureTraceStr = [NSString stringWithFormat:@"%@",isGestureTrace];
+        if ([isGestureTraceStr isKindOfClass:[NSString class]])
+        {
+            if([isGestureTraceStr isEqualToString:@"0"]){
+                self.lineColor = [UIColor clearColor];
+            }
+            else{
+                self.lineColor = [self colorWithHex:value andAlpha:1];
+            }
+        }
     }
-    
 }
 - (UIColor*)colorWithHex:(NSString*)hex andAlpha:(float)alpha{
     hex = [hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
