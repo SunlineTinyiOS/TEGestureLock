@@ -158,8 +158,7 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
     [super layoutSubviews];
     CGRect tempRect = UIEdgeInsetsInsetRect(self.bounds, self.contentInsets);
     self.contentView.frame = tempRect;
-    
-    float btnWidth = tempRect.size.width / 3;
+    float btnWidth = tempRect.size.width / 3.5;
     kButtonDefaultSize = CGSizeMake(btnWidth, btnWidth);
     
     CGFloat hButtonMargin = (self.contentView.bounds.size.width - kButtonDefaultSize.width * self.buttonsPerRow) / (self.buttonsPerRow - 1);
