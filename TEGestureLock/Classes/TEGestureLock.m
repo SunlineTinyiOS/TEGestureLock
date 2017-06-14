@@ -158,7 +158,8 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
     [super layoutSubviews];
     CGRect tempRect = UIEdgeInsetsInsetRect(self.bounds, self.contentInsets);
     self.contentView.frame = tempRect;
-    float btnWidth = tempRect.size.width / 3.5;
+    
+    float btnWidth = tempRect.size.width / 3;
     kButtonDefaultSize = CGSizeMake(btnWidth, btnWidth);
     
     CGFloat hButtonMargin = (self.contentView.bounds.size.width - kButtonDefaultSize.width * self.buttonsPerRow) / (self.buttonsPerRow - 1);
@@ -262,6 +263,16 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
         UIButton* hittedButton = [self buttonContainsPoint:testPoint];
         if (hittedButton && ![self.selectedButtons containsObject:hittedButton]) {
             hittedButton.selected = YES;
+            if(self.selectedButtons.count == 1) {
+                UIButton *btn = (UIButton *)self.selectedButtons[0];
+                NSInteger index1 = [self.buttons indexOfObject:btn];
+                NSInteger index2 = [self.buttons indexOfObject:hittedButton];
+                if(index1 ==0 && index2 == 2) {
+                    UIButton *btn1 = self.buttons[1];
+                    btn1.selected = YES;
+                    [self.selectedButtons addObject:self.buttons[1]];
+                }
+            }
             [self.selectedButtons addObject:hittedButton];
         }
         self.trackedGSPoint = [NSValue valueWithCGPoint:testPoint];
@@ -277,13 +288,9 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
             if (!self.firstPassword || (self.firstPassword && [pwd isEqualToString:self.firstPassword])) {
                 _stateImageView.image = [self gesImageWithPassword:pwd];
             }
-            
-            
             [self setNeedsDisplay];
         }
     }
-
-    
 }
 // 点下结束
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
