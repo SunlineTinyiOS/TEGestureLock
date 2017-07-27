@@ -288,9 +288,9 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
             if (!self.firstPassword || (self.firstPassword && [pwd isEqualToString:self.firstPassword])) {
                 _stateImageView.image = [self gesImageWithPassword:pwd];
             }
-            [self setNeedsDisplay];
         }
     }
+    [self setNeedsDisplay];
 }
 // 点下结束
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
