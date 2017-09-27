@@ -157,7 +157,18 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
 {
     [super layoutSubviews];
     CGRect tempRect = UIEdgeInsetsInsetRect(self.bounds, self.contentInsets);
-    self.contentView.frame = tempRect;
+   
+    /*
+     *    手势密码在页面展示时，是正方形
+     *    yuzhif    20170927
+     *
+     */
+    if (tempRect.size.width<=tempRect.size.height) {
+            self.contentView.frame = CGRectMake(tempRect.origin.x, tempRect.origin.y, tempRect.size.width, tempRect.size.width);
+    }
+    else{
+                self.contentView.frame = CGRectMake(tempRect.origin.x, tempRect.origin.y, tempRect.size.height, tempRect.size.height);
+    }
     
     float btnWidth = tempRect.size.width / 4;
     kButtonDefaultSize = CGSizeMake(btnWidth, btnWidth);
