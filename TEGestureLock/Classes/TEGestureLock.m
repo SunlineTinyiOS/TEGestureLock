@@ -93,8 +93,8 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
         }
         
 //        // 这两个属性必须在最后设置 !!!
-//        self.numberOfButtons = kNumberOfButtons;
-//        self.buttonsPerRow = kButtonsPerRow;
+        self.numberOfButtons = kNumberOfButtons;
+        self.buttonsPerRow = kButtonsPerRow;
         
       /*
        *  用了懒加载，需要再设置这两个值，否者无法改变未选中和选中时图片的样式
@@ -478,11 +478,11 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
                     self.normalButtonImage = images;
                 }
             }
-            // self.normalButtonImage = [UIImage imageNamed:@"accountLock1.png"];
+//            self.normalButtonImage = [UIImage imageNamed:@"accountLock1.png"];
+            for (UIButton *button in self.buttons ) {
+                [button setImage:self.normalButtonImage forState:UIControlStateNormal];
+            }
 
-            // 这两个属性必须在最后设置 !!!
-            self.numberOfButtons = kNumberOfButtons;
-            self.buttonsPerRow = kButtonsPerRow;
         }
     }
     else if([name isEqualToString:@"choosed"]) {
@@ -513,10 +513,13 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
                     self.selectedButtonImage = images;
                 }
             }
+            
 //            self.selectedButtonImage = [UIImage imageNamed:@"accountLock2.png"];
             // 这两个属性必须在最后设置 !!!
-            self.numberOfButtons = kNumberOfButtons;
-            self.buttonsPerRow = kButtonsPerRow;
+            for (UIButton *button in self.buttons ) {
+                [button setImage:self.selectedButtonImage forState:UIControlStateSelected];
+            }
+            
         }
     }
 }
