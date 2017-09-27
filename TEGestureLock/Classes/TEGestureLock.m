@@ -52,11 +52,8 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
 @implementation TEGestureLock
 @synthesize kButtonDefaultSize;
 
-
-- (id)init
-{
-    self = [super init];
-    if (self) {
+-(instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame:frame]) {
         
         self.backgroundColor = [UIColor clearColor];
         
@@ -71,13 +68,12 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
         self.lineWidth = kLineDefaultWidth;
         
         self.selectedButtons = [NSMutableArray array];
+//        
+                self.normalButtonImage = [UIImage imageNamed:kButtonNormalImageName];
+                self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
         
-        
-        self.normalButtonImage = [UIImage imageNamed:kButtonNormalImageName];
-        self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
-        
-//        self.normalButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
-//        self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
+        //        self.normalButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
+        //        self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
         
         //隐藏手势密码的轨迹
         NSString *isGestureTrace = [[NSUserDefaults standardUserDefaults] objectForKey:@"isGestureTrace"];
@@ -86,29 +82,33 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
         {
             if([isGestureTraceStr isEqualToString:@"0"]){
                 self.selectedButtonImage = [UIImage imageNamed:kButtonNormalImageName];
-//                 self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
+                //                 self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonNormalImageName];
                 self.lineColor = [UIColor clearColor];
             }
             else{
                 self.selectedButtonImage = [UIImage imageNamed:kButtonSelectImageName];
-//                self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
+                //                self.selectedButtonImage = [UIImage TEGestrueLockImageNamed:kButtonSelectImageName];
                 self.lineColor = [UIColor colorWithRed:6.0/255 green:112.0/255 blue:154.0/255 alpha:0.6];
             }
         }
         
-        // 这两个属性必须在最后设置 !!!
-        self.numberOfButtons = kNumberOfButtons;
-        self.buttonsPerRow = kButtonsPerRow;
+//        // 这两个属性必须在最后设置 !!!
+//        self.numberOfButtons = kNumberOfButtons;
+//        self.buttonsPerRow = kButtonsPerRow;
+        
+      /*
+       *  用了懒加载，需要再设置这两个值，否者无法改变未选中和选中时图片的样式
+       *  yuzhif  20170927
+       */
         
         //最少节点个数
         self.minpwd = 5;
-        
         self.kLabelHeight = 0;
-        
         self.timeout = 100;
     }
     return self;
 }
+
 
 - (UIImage *)gesImageWithPassword:(NSString *)pwd{
     if (!pwd) {
@@ -156,6 +156,7 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    
     CGRect tempRect = UIEdgeInsetsInsetRect(self.bounds, self.contentInsets);
    
     /*
@@ -167,7 +168,7 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
             self.contentView.frame = CGRectMake(tempRect.origin.x, tempRect.origin.y, tempRect.size.width, tempRect.size.width);
     }
     else{
-                self.contentView.frame = CGRectMake(tempRect.origin.x, tempRect.origin.y, tempRect.size.height, tempRect.size.height);
+            self.contentView.frame = CGRectMake(tempRect.origin.x, tempRect.origin.y, tempRect.size.height, tempRect.size.height);
     }
     
     float btnWidth = tempRect.size.width / 4;
@@ -446,8 +447,80 @@ static NSString* const kErrCompleteTag       = @"errcomplete";
                 self.lineColor = [self colorWithHex:value andAlpha:1];
             }
         }
+        self.numberOfButtons = kNumberOfButtons;
+        self.buttonsPerRow = kButtonsPerRow;
+    }
+    else if([name isEqualToString:@"unchoosed"]) {
+         //设置未选中时的图片
+        if(value==nil||[value isEqualToString:@""]){
+        
+        }
+        else{
+            NSString *imgPath = value;
+            if(imgPath!=nil||![imgPath isEqualToString:@""]){
+                if([imgPath rangeOfString:@"file:///"].location != NSNotFound)
+                {
+                    NSString *tempStr = [[NSString alloc]initWithFormat:@"%@",imgPath];
+                    NSRange range = [tempStr rangeOfString:@"file:///"];
+                    NSString *PathStr = [tempStr substringFromIndex:(range.length-1)];
+                    NSString* path=[[[NSBundle mainBundle] resourcePath]stringByAppendingPathComponent:PathStr];
+                    UIImage *images=[UIImage imageWithContentsOfFile:path];
+                    self.normalButtonImage = images;
+                }
+                else{
+                    NSString *pageUrl = [[NSUserDefaults standardUserDefaults] objectForKey:@"pageURL"];
+                    NSString *tmpPath =  [pageUrl stringByDeletingLastPathComponent];
+                    NSRange range = [tmpPath rangeOfString:@"file:"];
+                    NSString *tmp2 = [tmpPath substringFromIndex:(range.length)];
+                    NSString *tmp3 = [NSString stringWithFormat:@"%@/%@",tmp2,imgPath];
+                    NSString* path=[[[NSBundle mainBundle] resourcePath]stringByAppendingPathComponent:tmp3];
+                    UIImage *images=[UIImage imageWithContentsOfFile:path];
+                    self.normalButtonImage = images;
+                }
+            }
+            // self.normalButtonImage = [UIImage imageNamed:@"accountLock1.png"];
+
+            // 这两个属性必须在最后设置 !!!
+            self.numberOfButtons = kNumberOfButtons;
+            self.buttonsPerRow = kButtonsPerRow;
+        }
+    }
+    else if([name isEqualToString:@"choosed"]) {
+        //设置选中时的图片
+        if(value==nil||[value isEqualToString:@""]){
+            
+        }
+        else{
+            NSString *imgPath = value;
+            if(imgPath!=nil||![imgPath isEqualToString:@""]){
+                if([imgPath rangeOfString:@"file:///"].location != NSNotFound)
+                {
+                    NSString *tempStr = [[NSString alloc]initWithFormat:@"%@",imgPath];
+                    NSRange range = [tempStr rangeOfString:@"file:///"];
+                    NSString *PathStr = [tempStr substringFromIndex:(range.length-1)];
+                    NSString* path=[[[NSBundle mainBundle] resourcePath]stringByAppendingPathComponent:PathStr];
+                    UIImage *images=[UIImage imageWithContentsOfFile:path];
+                    self.selectedButtonImage = images;
+                }
+                else{
+                    NSString *pageUrl = [[NSUserDefaults standardUserDefaults] objectForKey:@"pageURL"];
+                    NSString *tmpPath =  [pageUrl stringByDeletingLastPathComponent];
+                    NSRange range = [tmpPath rangeOfString:@"file:"];
+                    NSString *tmp2 = [tmpPath substringFromIndex:(range.length)];
+                    NSString *tmp3 = [NSString stringWithFormat:@"%@/%@",tmp2,imgPath];
+                    NSString* path=[[[NSBundle mainBundle] resourcePath]stringByAppendingPathComponent:tmp3];
+                    UIImage *images=[UIImage imageWithContentsOfFile:path];
+                    self.selectedButtonImage = images;
+                }
+            }
+//            self.selectedButtonImage = [UIImage imageNamed:@"accountLock2.png"];
+            // 这两个属性必须在最后设置 !!!
+            self.numberOfButtons = kNumberOfButtons;
+            self.buttonsPerRow = kButtonsPerRow;
+        }
     }
 }
+
 - (UIColor*)colorWithHex:(NSString*)hex andAlpha:(float)alpha{
     hex = [hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if (!hex || [hex length] != 7) {

@@ -25,8 +25,8 @@
 // 每行按钮数，默认 3
 @property (nonatomic, assign) NSUInteger buttonsPerRow;
 
-@property (nonatomic, retain) UIImage* normalButtonImage;
-@property (nonatomic, retain) UIImage* selectedButtonImage;
+@property (nonatomic, assign) UIImage* normalButtonImage;
+@property (nonatomic, assign) UIImage* selectedButtonImage;
 
 @property (nonatomic, retain) UIColor* lineColor;
 @property (nonatomic, assign) CGFloat lineWidth;

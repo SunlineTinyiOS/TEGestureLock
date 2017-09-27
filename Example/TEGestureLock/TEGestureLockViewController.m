@@ -19,7 +19,10 @@
 {
     TEGestureLock *lock = [[TEGestureLock alloc] init];
     lock.frame = CGRectMake(0, 0, 300, 400);
-    [lock performSelector:@selector(setParam: :) withObject:@"lineColor" withObject:@"#FFFF00"];
+    [lock performSelector:@selector(setParam: :) withObject:@"lineColor" withObject:@"#FF0000"];
+//    [lock performSelector:@selector(setParam: :) withObject:@"unchoosed" withObject:@"accountLock1.png"];
+//    [lock performSelector:@selector(setParam: :) withObject:@"choosed" withObject:@"accountLock2.png"];
+
 
     [self.view addSubview:lock];
     
